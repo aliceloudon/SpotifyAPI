@@ -18,14 +18,12 @@ var requestComplete = function(){
 }
 
 var populateList = function(albums){
-  var div = document.querySelector('#albums')
-  var ul = document.createElement('ul')
+  var ul = document.getElementById('albums')
 
   albums.albums.items.forEach(function(album){
     var li = document.createElement('li')
     li.innerText = album.name
-    ul.appendChild('li')      
-    div.appendChild('ul')
+    ul.appendChild(li)
   }) 
 
 }
